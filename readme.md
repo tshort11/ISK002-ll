@@ -1,145 +1,145 @@
-## Welcome to interlude!
-This application allows users to discover and manage their favorite music, albums, and artists using the Spotify API
+#  Welcome to *interlude!*
 
-## Table of Contents
-- [Installation Instructions](#installation-instructions)
-- [Libraries](#dependencies)
-- [System/Hardware Requirements](#systemhardware-requirements)
-- [How to use](#How-to-use)
-- [Features](#features)
-- [License Information](#license-information)
-
-## Instilation 
-```
-pip install -r requriements.txt
-```
-
-## Libraries 
-The following libraries are required for the application to function correctly:
-
-- json: For handling JSON data.
-- os: For operating system interactions.
-- requests: For making HTTP requests to the Spotify API.
-- rich: For enhanced console output.
-- colorama: For colored terminal text.
-- prettytable: For displaying tabular data.
-- your_custom_classes: Any custom classes you’ve implemented (e.g., User, Album, etc.).
-
-## System/Hardware Requirements
-
-To run this application, your system should meet the following requirements:
-
-- Operating System: Windows, macOS, or Linux.
-- Python: Version 3.7 or later
-
-## How to use
-### 1. User Account Management
-
-- **Create an Account**:
-  - When you launch the application, you will be presented with options to create an account or log in.
-  - Select **1** for "Create Account".
-  - Enter a username and a password when prompted.
-
-- **Login**:
-  - Select **2** for "Login".
-  - Enter your username and password to access your profile.
-
-### 2. Adding Favorite Albums
-
-- **Add Favorite Album**:
-  - After logging in, select **1** from the menu.
-  - Enter the name of your favorite album when prompted.
-  - The application will search for the album on Spotify.
-  - Once found, you will be prompted to rate the album out of 5. Enter a rating between 0 and 5.
-
-### 3. Adding Favorite Songs
-
-- **Add Favorite Song**:
-  - Select **2** from the menu.
-  - Enter the name of your favorite song.
-  - The application will search for the song on Spotify.
-  - After finding it, rate the song out of 5 as prompted.
-
-### 4. Adding Favorite Artists
-
-- **Add Favorite Artist**:
-  - Select **3** from the menu.
-  - Enter the name of the artist you want to add to your favorites.
-  - The application will search for the artist on Spotify and add them to your profile.
-
-### 5. Discovering Music
-
-- **Discover Music**:
-  - Select **4** from the menu.
-  - The application will display a list of new music releases. Each entry includes the album title, artist(s), release date, total tracks, and a link to listen on Spotify.
-
-### 6. Viewing Your Favorites
-
-- **View Your Favorites**:
-  - Select **5** from the menu.
-  - The application will display tables showing your favorite albums, songs, and artists along with their ratings.
-
-### 7. Saving and Exiting
-
-- **Save and Exit**:
-  - Select **6** from the menu to save your user data and exit the application.
-  - Your account information and favorites will be saved locally for future access.
-
-### Tips for Best Experience
-
-- Ensure you have a stable internet connection while using the application, as it interacts with the Spotify API for data.
-- Remember to enter valid usernames and passwords that meet the application's requirements.
-- Keep your dependencies up to date to ensure smooth functioning.
+**interlude!** is a command-line music discovery and management application that lets users explore and rate their favorite songs, albums, and artists using the **Spotify API**.
 
 ---
 
-By following these instructions, you can fully utilize the features of the Music Recommendation CLI Application to manage and discover your favorite music!
+##  Table of Contents
 
-## Features 
+- [Installation Instructions](#installation-instructions)
+- [Dependencies](#dependencies)
+- [System/Hardware Requirements](#systemhardware-requirements)
+- [How to Use](#how-to-use)
+- [Features](#features)
+- [License Information & Ethics](#license-information--ethics)
 
-interlude! follows these features 
+---
 
-- User Account Management: Create and log in to user accounts.
-- Favorite Albums: Add and rate your favorite albums.
-- Favorite Songs: Add and rate your favorite songs.
-- Favorite Artists: Add your favorite artists to your profile.
-- Discover Music: Explore new releases and trending albums.
-- View Profile Information: Check your saved favorites.
-- Save User Data: User data is saved locally for easy retrieval.
+## Installation Instructions
 
-## License Information
+Follow these steps to install the application:
 
-interlude! uses several third-party libraries. Below is a list of these libraries, their respective licenses, and a brief overview of the ethical considerations associated with their use.
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/tshort11/ISK002-ll.git
+   cd interlude
+   ```
 
-### Third-Party Libraries
+2. **Install Required Dependencies**  
+   Ensure you are in a virtual environment (optional but recommended), then run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1. **requests**
-   - **License**: Apache 2.0 License
-   - **Ethical Consideration**: This license allows for both personal and commercial use, modification, and distribution. It promotes open-source collaboration while requiring proper attribution, ensuring that developers contribute back to the community.
+3. **Run the Application**  
+   ```bash
+   python main.py
+   ```
 
-2. **rich**
-   - **License**: MIT License
-   - **Ethical Consideration**: The MIT License is permissive, allowing for broad use and modification with minimal restrictions. This encourages sharing and innovation, which aligns with ethical software development practices.
+---
 
-3. **colorama**
-   - **License**: MIT License
-   - **Ethical Consideration**: Similar to rich, the MIT License ensures freedom in using the software, fostering an open and collaborative environment.
+##  Dependencies
 
-4. **prettytable**
-   - **License**: MIT License
-   - **Ethical Consideration**: The permissive nature of the MIT License allows developers to use and adapt the software without stringent restrictions, which is ethical as it promotes creativity and improvements.
+The following libraries are required for the application to function correctly:
 
-5. **json**
-   - **License**: Public Domain
-   - **Ethical Consideration**: Since JSON is in the public domain, it can be used without any restrictions. This fosters a sense of community and cooperation among developers.
+- **`requests`**: Handles HTTP communication with the Spotify API.
+- **`rich`**: Enhances console UI with colors, tables, and formatting.
+- **`colorama`**: Enables colored text on the command line (cross-platform).
+- **`prettytable`**: Displays clean, readable tables for user data.
+- **`json`**: Handles storage and retrieval of user data (built-in).
+- **`os`**: Interacts with the file system (built-in).
+- **Your custom modules** (e.g., `user.py`, `album.py`, etc.)
 
-### Ethical Considerations
+All external libraries can be installed via `pip`.
 
-Using third-party libraries is ethical as long as you comply with their licenses. It is important to:
+---
 
-- **Attribution**: Give appropriate credit to the authors of the libraries used.
-- **Adhere to License Terms**: Ensure compliance with the terms of the licenses, which may include sharing modifications under the same license or not using the libraries in ways that contradict their licenses.
-- **Support Open Source**: Contributing to open-source projects and the community is a way to ethically engage with the software development ecosystem.
+## System/Hardware Requirements
 
-By using these libraries, you support the ethical principles of software development, which promote transparency, collaboration, and innovation.
+| Component         | Requirement                         |
+|------------------|-------------------------------------|
+| Operating System | Windows, macOS, or Linux            |
+| Python Version   | Python 3.7 or higher                |
+| Disk Space       | At least 50MB free for local files  |
+| Internet         | Required for accessing Spotify API  |
+
+---
+
+##  How to Use
+
+### 1. Launch and Authenticate
+- Run `main.py` and select from:
+  - **1**: Create a new user account
+  - **2**: Log in to an existing account
+
+### 2. Favorite Management
+- **Add Favorite Album**: Search by name and rate it (0-5)
+- **Add Favorite Song**: Search and rate songs similarly
+- **Add Favorite Artist**: Add an artist by name
+
+### 3. Discover New Music
+- View trending or new Spotify releases:
+  - Albums are shown with title, artist, release date, and links
+
+### 4. View and Manage Your Profile
+- See your saved:
+  - Favorite albums with ratings
+  - Favorite songs
+  - Favorite artists
+
+### 5. Exit and Save
+- Select **6** from the menu
+- Saves all user data locally in `.json` format
+
+### Tips for Best Experience
+- Use stable internet during usage for API responses
+- Avoid duplicate usernames
+- Periodically update dependencies with:
+  ```bash
+  pip install --upgrade -r requirements.txt
+  ```
+
+---
+
+## Features
+
+| Feature                   | Description                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|
+| User Account Management   | Create, log in, and manage user profiles                                    |
+| Favorite Albums & Songs   | Add and rate music you enjoy                                                |
+| Favorite Artists          | Save your favorite music creators                                           |
+| Discover Music            | View new releases and explore suggestions                                  |
+| Saved Profiles            | Data is saved locally for future sessions                                  |
+| CLI Interface             | Simple, readable interface for quick access                                |
+
+---
+
+##  License Information & Ethics
+
+### 🔍 Third-Party Libraries and Licenses
+
+| Library     | License Type       | Ethical Notes |
+|-------------|--------------------|----------------|
+| `requests`  | Apache License 2.0 | Open and permissive; promotes contribution and proper attribution. |
+| `rich`      | MIT License        | Encourages reuse and sharing; ideal for open-source tools. |
+| `colorama`  | MIT License        | Easy redistribution and modification make it open and ethical. |
+| `prettytable`| MIT License       | Lightweight and reusable for both personal and commercial use. |
+| `json` (builtin) | Public Domain | No restrictions on use; encourages free and open development. |
+
+### Ethical Use of Software
+
+This project follows ethical guidelines for software development:
+
+- **Transparency**: All libraries and their licenses are clearly documented.
+- **Compliance**: Licensing terms are respected in distribution and use.
+- **Attribution**: Credit is given to authors where required.
+- **Open Source Support**: Use of libraries under MIT and Apache 2.0 licenses supports open-source collaboration.
+
+**We do not use any third-party software with restrictive, unethical, or non-compliant licenses.**
+
+---
+
+By using **interlude!**, you join a community that values transparency, openness, and creativity in tech. 
+
+
 
